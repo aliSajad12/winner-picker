@@ -12,6 +12,7 @@ namesProvided.forEach(name => {
 const winnersAmount = 1;
 //At least one winner should be picked up, this value will change according to the user choice.
 
+
 const randomNumbers = []
 //Here we'll store the 1 or 3 random numbers winners, each number will be linked to a name string.
 
