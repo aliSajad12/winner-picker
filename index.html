@@ -14,16 +14,33 @@
     <div class="container">
         <div class="title">
             <h1>Random <span class="highlight">Winner</span> Picker</h1>
-            <p>Type the names below and seperate by comma</p>
+            <p>Place the names below comma separated</p>
         </div>
 
         <div class="box">
             <div class="left">
                 <h2>Participants</h2>
                 <textarea id="textArea" placeholder="Participants name here..."></textarea>
+                <div class="amountOfWinners">
+                    <h5>How many winners do you want?</h5>
+                    <div class="checkboxes">
+                        <label for="oneWinner" class="winnerCheckbox">
+                            <input type="checkbox"> One Winner
+                        </label>
 
+                        <label for="twoWinners" class="winnerCheckbox">
+                            <input type="checkbox"> Two Winners
+                        </label>
+
+                        <label for="threeWinners" class="winnerCheckbox">
+                            <input type="checkbox"> Three Winner
+                        </label>
+
+                    </div>
+                </div>
+                
                 <div class="shuffle">
-
+                    <button class="randomize">Generate winners</button>
                 </div>
             </div>
             <div class="right">

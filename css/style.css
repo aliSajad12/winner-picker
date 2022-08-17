@@ -53,7 +53,7 @@ body{
 .box{
     background-color: var(--box-bg);
     width: 100%;
-    height: 70vh;
+    height: 78vh;
     border-radius: 10px;
     box-shadow: 0 10px 20px var(--box-shadow);
     display: flex;
@@ -71,18 +71,35 @@ body{
 #textArea{
     border: 0;
     width: 80%;
-    height: 100px;
+    height: 60%;
     padding: 1rem;
-    margin: 0 auto; 
+    margin: 0 auto;
+    transition: 0.4s; 
     font-family: 'Poppins', sans-serif;
+    resize: none;
+    overflow-y: auto;
+}
+
+#textArea::-webkit-scrollbar {
+    width: 10px;
+}
+
+#textArea::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+#textArea::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
 }
 
 #textArea:focus{
-    
 }
 
 #textArea:hover{
     border: 3px solid red;
+    transition: 0.2s;
 }
 
 .right{
@@ -96,3 +113,38 @@ h2{
     margin-bottom: 1rem;
 }
 
+.amountOfWinners {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin: 2%;
+    justify-content: space-around;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkboxes label {
+    margin-left: 3%;
+    font-size: 0.9rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.winnerCheckbox input {
+    border-radius: 2rem;
+}
+
+.randomize {
+    background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+    border: none;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
