@@ -1,4 +1,4 @@
-const namesProvided = [];
+const namesProvided = document.getElementById('textArea');
 //Here we save the names placed in the website input
 
 let count = 0;

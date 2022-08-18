@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Winner Picker</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="theme-toggler">
-        
+        <span class="material-icons active">light_mode</span>
+        <span class="material-icons">dark_mode</span>
     </div>
     <div class="container">
         <div class="title">
@@ -24,25 +28,22 @@
                 <div class="amountOfWinners">
                     <h5>How many winners do you want?</h5>
                     <div class="checkboxes">
-                        <label for="oneWinner" class="winnerCheckbox">
-                            <input type="checkbox"> One Winner
-                        </label>
+                      <input type="radio" id="oneWinner" name="winners" value="onwWinner">
+                      <label for="oneWinner">One Winner</label>
 
-                        <label for="twoWinners" class="winnerCheckbox">
-                            <input type="checkbox"> Two Winners
-                        </label>
-
-                        <label for="threeWinners" class="winnerCheckbox">
-                            <input type="checkbox"> Three Winner
-                        </label>
-
+                      <input type="radio" id="TwoWinners" name="winners" value="twoWinners">
+                      <label for="twoWinners">Two Winners</label>
+                        
+                      <input type="radio" id="ThreeWinners" name="winners" value="threeWinners">
+                      <label for="threeWinners">Three Winners</label>
                     </div>
                 </div>
-                
-                <div class="shuffle">
-                    <button class="randomize">Generate winners</button>
+                <button class="randomize">Generate winners</button>
+                <div class="shufflingArea">
+                    
                 </div>
             </div>
+
             <div class="right">
                 <h2>Winners</h2>
             </div>
