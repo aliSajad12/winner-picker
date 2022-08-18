@@ -55,10 +55,9 @@ for(let i = 0; i < winnersAmount; i++){
     
 }
 
-document.getElementById("textAreaOutput").textContent=`${textArea.replace(/\n/g, '<br/>')}`;
+document.querySelector(".textAreaOutput").textContent=`${textArea}`;
 
 
 }
 
 //Theme toggler
-const themeToggler

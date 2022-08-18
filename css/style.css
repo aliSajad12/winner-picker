@@ -170,3 +170,9 @@ h5 {
     transition: 0.5s;
 }
 
+
+.textAreaOutput{
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
