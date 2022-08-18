@@ -51,13 +51,23 @@ for(let i = 0; i < winnersAmount; i++){
 
     winnerOutput.push(namesProvided[randomNumbers[i]]);
     console.log(winnerOutput[i]);
-    textArea += `${winnerOutput[i]} \n`;
     
 }
 
-document.querySelector(".textAreaOutput").textContent=`${textArea}`;
+//console.log(winnerOutput.toString().replace(/[ ]*,[ ]*|[ ]+/g, '<br>'));
+
+
+let winnersPrint = document.querySelector('.winners-list');
+
+winnersPrint.innerHTML = `<h3></h3>`;
+
+winnerOutput.forEach(winner => {
+    winnersPrint.innerHTML += `<h3>${winner}</h3>`
+});
+
+console.log(winnersPrint);
+
+//document.getElementById("textAreaOutput").innerHTML=`${winnerOutput.toString().replace(/[]*,[]*|[]+/g, '')}`;
 
 
 }
-
-//Theme toggler

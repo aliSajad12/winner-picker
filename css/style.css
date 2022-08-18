@@ -12,13 +12,6 @@
     --color: #0e0e0e;
 }
 
-.darkTheme{
-    --body-bg: #1d1d1d;
-    --box-bg: #2e2e2e;
-    --box-shadow: #0e0e0e8f;
-    --color: #ffffff; 
-}
-
 html{
     font-size: 16px;
 }
@@ -170,9 +163,6 @@ h5 {
     transition: 0.5s;
 }
 
-
-.textAreaOutput{
-    width: 100px;
-    margin: 0 auto;
+.winners-list {
     text-align: center;
 }
