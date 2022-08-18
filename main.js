@@ -55,6 +55,7 @@ for(let i = 0; i < winnersAmount; i++){
     
 }
 
-document.getElementById("textAreaOutput").innerHTML=`${textArea}`;
+document.getElementById("textAreaOutput").textContent=`${textArea.replace(/\n/g, '<br/>')}`;
+
 
 }
