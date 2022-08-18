@@ -12,6 +12,13 @@
     --color: #0e0e0e;
 }
 
+.darkTheme{
+    --body-bg: #1d1d1d;
+    --box-bg: #2e2e2e;
+    --box-shadow: #0e0e0e8f;
+    --color: #ffffff; 
+}
+
 html{
     font-size: 16px;
 }

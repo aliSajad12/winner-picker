@@ -58,3 +58,6 @@ for(let i = 0; i < winnersAmount; i++){
 document.getElementById("textAreaOutput").innerHTML=`${textArea}`;
 
 }
+
+//Theme toggler
+const themeToggler
