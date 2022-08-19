@@ -13,13 +13,12 @@
 <body>
     <div class="theme-toggler">
         <span class="material-icons active">light_mode</span>
-        <span class="material-icons">dark_mode</span>
+        <span class="material-icons" onclick="darkMode()">dark_mode</span>
     </div>
-
     <div class="container">
         <div class="title">
-            <h1>Random <span class="highlight">Winner</span> Picker</h1>
-            <p>Place the names below comma separated</p>
+            <h1>Random Winner Picker</h1>
+            <p>Place the names below, make sure to separate them using a line break.</p>
         </div>
 
         <div class="box">
@@ -46,9 +45,9 @@
             </div>
 
             <div class="right">
-                <h2>Winners</h2>
-                <div class="Winners list">
-                    <h3 class="textAreaOutput"></h3>
+                <h2 class="highlight">Winners</h2>
+                <div class="winners-list">
+                    <h3 id="textAreaOutput">Press 'Generate winners' button.</h3>
                 </div>
             </div>
         </div>
