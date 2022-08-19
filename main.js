@@ -72,10 +72,13 @@ console.log(winnersPrint);
 
 }
 
-function darkMode() {
-    var element = document.body;
+//Dark mode function
+const themToggler = document.querySelector(".theme-toggler");
+
+themToggler.addEventListener('click', ()=>{
     document.body.classList.toggle('dark-mode');
 
-    themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-    themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
- }
+    themToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+    themToggler.querySelector('span:nth-child(1)').style.color = 'white';
+    themToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+})
