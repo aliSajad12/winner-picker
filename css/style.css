@@ -173,8 +173,6 @@ h5 {
     border-radius: 1rem;
     font-size: 1rem;
     transition: 0.5s;
-<<<<<<< HEAD
-=======
     width: 40%;
     margin: 0 auto;
 }
@@ -202,5 +200,5 @@ h3 {
     .box {
         min-height: 500px;
     }
->>>>>>> 389137ffe6992f1336484c1e1578460e0e506144
+
 }
