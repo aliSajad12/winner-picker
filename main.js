@@ -1,3 +1,57 @@
+// Validations 
+
+let twoWinnersCheck = document.getElementById('TwoWinners');
+let threeWinnersCheck = document.getElementById('ThreeWinners');
+let textAreaBox = document.getElementById('textArea');
+let randomizerButton = document.getElementById('randomizer-button');
+//console.log('This is my text ' + myText)
+
+const separate = (str) => {
+    console.log(`separate function str= ${str}`)
+    line = ++str.match(/\n/g).length;
+    console.log('This is line: ' + line)
+    return line;
+}
+
+
+let textChecker = function() {
+    let myText = document.getElementById('textArea').value;
+    console.log('This is my text ' + myText);
+    //console.log(typeof myText);
+    separate(myText);
+    if (line > 2 && line < 4) {
+        twoWinnersCheck.disabled = false;
+        randomizerButton.className = 'randomize';
+        randomizerButton.disabled = false;
+    } else if (line > 4) {
+        twoWinnersCheck.disabled = false;
+        threeWinnersCheck.disabled = false;
+        randomizerButton.className = 'randomize';
+        randomizerButton.disabled = false;
+    }
+    else if (line < 4 || line === null) {
+        twoWinnersCheck.disabled = true;
+        threeWinnersCheck.disabled = true;
+        randomizerButton.className = 'disabled';
+        randomizerButton.disabled = true;
+    }
+}
+
+textAreaBox.addEventListener('input', textChecker);
+
+randomizerButton.addEventListener('click', () => {
+    let textAreaContent = document.getElementById('textArea').value;
+    if(textAreaContent === '') {
+        randomizerButton.className = 'disabled';
+        alert("There are no names in the text box.")
+        twoWinnersCheck.disabled = true;
+        threeWinnersCheck.disabled = true;
+    } else {
+        randomizer();
+    }
+})
+
+
 const randomizer = () => {
 
 const divideString= (stringDivide,separator) => {
@@ -98,44 +152,3 @@ themToggler.querySelector('span:nth-child(1)').classList.toggle('active');
 themToggler.querySelector('span:nth-child(1)').style.color = 'white';
 themToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 })
-
-// Validations 
-
-let twoWinnersCheck = document.getElementById('TwoWinners');
-let threeWinnersCheck = document.getElementById('ThreeWinners');
-let textAreaBox = document.getElementById('textArea');
-let randomizerButton = document.getElementById('randomizer-button');
-//console.log('This is my text ' + myText)
-
-const separate = (str) => {
-    console.log(`separate function str= ${str}`)
-    line = ++str.match(/\n/g).length;
-    console.log('This is line: ' + line)
-    return line;
-}
-
-
-let textChecker = function() {
-    let myText = document.getElementById('textArea').value;
-    console.log('This is my text ' + myText);
-    //console.log(typeof myText);
-    separate(myText);
-    if (line > 2 && line < 4) {
-        twoWinnersCheck.disabled = false;
-        randomizerButton.className = 'randomize';
-        randomizerButton.disabled = false;
-    } else if (line > 4) {
-        twoWinnersCheck.disabled = false;
-        threeWinnersCheck.disabled = false;
-        randomizerButton.className = 'randomize';
-        randomizerButton.disabled = false;
-    }
-    else if (line < 4 || line === null) {
-        twoWinnersCheck.disabled = true;
-        threeWinnersCheck.disabled = true;
-        randomizerButton.className = 'disabled';
-        randomizerButton.disabled = true;
-    }
-}
-
-textAreaBox.addEventListener('input', textChecker);
