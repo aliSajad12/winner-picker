@@ -31,21 +31,21 @@
         <div class="box">
             <div class="left">
                 <h2>Participants</h2>
-                <textarea id="textArea" class="textArea" placeholder="Participants name here..."></textarea>
+                <textarea id="textArea" class="textArea" placeholder="Place participants here separated with break line..." required></textarea>
                 <div class="amountOfWinners">
                     <h5>How many winners do you want?</h5>
                    <div class="checkboxes">
                       <input type="radio" id="oneWinner" name="winners" value="1" checked="checked">
                       <label for="oneWinner">One Winner</label>
 
-                      <input type="radio" id="TwoWinners" name="winners" value="2">
+                      <input type="radio" id="TwoWinners" name="winners" value="2" disabled>
                       <label for="twoWinners">Two Winners</label>
                         
-                      <input type="radio" id="ThreeWinners" name="winners" value="3">
+                      <input type="radio" id="ThreeWinners" name="winners" value="3" disabled>
                       <label for="threeWinners">Three Winners</label>
                     </div>
                 </div>
-                <button onclick="randomizer()" class="randomize">Generate winners</button>
+                <button id="randomizer-button" onclick="randomizer()" class="disabled" disabled>Generate winners</button>
             </div>
 
             <div class="right">

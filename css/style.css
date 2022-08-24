@@ -195,8 +195,20 @@ h5 {
     width: 40%;
     margin: 0 auto;
     animation: move 8s linear infinite;
-    background-image: linear-gradient(to right, rgb(247, 23, 247), #12a4f8, #8810eb, #15b2e2, rgb(247, 23, 247));
+    background-image: linear-gradient(to right, #77f, #2662e6, #15aec2, #c025b3, #77f);
     background-size: 200% auto;
+}
+
+.disabled {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #2C394B;
 }
 
 .winners-list {
